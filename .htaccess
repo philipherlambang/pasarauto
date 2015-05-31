@@ -1,0 +1,16 @@
+#AuthName "Restricted Area" 
+#AuthType Basic 
+#AuthUserFile /var/www/html/pasarauto.com/.htpasswd 
+#require valid-user
+
+
+# FollowSymLinks must be enabled for turning on the rewrite engine
+Options +FollowSymlinks
+
+RewriteEngine On
+#RewriteBase /
+
+rewritecond %{http_host} ^pasarauto.com [nc]
+rewriterule ^(.*)$ http://www.pasarauto.com/$1 [r=301,nc]
+
+RewriteRule ^tips-and-trick/([0-9]+)$ tips-and-trick-category.php?idcategory=$1

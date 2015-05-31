@@ -1,0 +1,261 @@
+@import "../var.less";
+
+#banner {
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:307px;
+	transition:all 1000ms ease;
+	width:100%;
+}
+
+#content {
+	margin:15px auto 0;
+	width:1170px;
+
+	#form {
+		.item {
+			display:inline-block;
+
+			select {
+				background:#7f7f7f;
+				color:#fff;
+				font-size:10px;
+				height:37px;
+				line-height:37px;
+			}
+		}
+
+		input[type=submit] {
+			background:#96000e;
+			border:none;
+			color:#fff;
+			line-height:37px;
+			text-align:center;
+			width:102px;
+		}
+
+		a.btn-viewall {
+			background:#107f08;
+			color:#fff;
+			display:inline-block;
+			line-height:37px;
+			text-align:center;
+			width:102px;
+		}
+
+		a.btn-advanced-search {
+			color:#000;
+			display:inline-block;
+			line-height:37px;
+			text-decoration:underline;
+		}
+	}
+
+	#left {
+		margin-top:15px;
+		width:880px;
+
+		#maker {
+			.list {
+				display:inline-block;
+				font-size:0;
+				width:730px;
+
+				a {
+					background-position:center;
+					background-size:cover;
+					display:inline-block;
+					height:65px;
+					width:91px;
+				}
+			}
+			
+			.btn-seemore {
+				display:inline-block;
+				margin:50px 0 0 20px;
+				vertical-align:top;
+
+				a {
+					color:#96000e;
+					font-size:10px;
+					text-decoration:underline;
+				}
+			}
+		}
+
+		#vehicle-type {
+			margin-top:15px;
+
+			.title {
+				background:#96000e;
+				color:#fff;
+				display:inline-block;
+				font-size:10px;
+				line-height:28px;
+				margin-bottom:15px;
+				text-align:center;
+				width:141px;
+			}
+
+			.list {
+				.item {
+					display:inline-block;
+					margin:0 10px 10px 0;
+					width:174px;
+
+					.image {
+						background-position:center;
+						background-size:cover;
+						display:block;
+						height:74px;
+						width:174px;
+					}
+
+					.name {
+						font-size:10px;
+						text-align:center;
+					}
+				}
+			}
+		}
+
+		#review {
+			margin-top:15px;
+
+			.title {
+				background:#96000e;
+				color:#fff;
+				font-size:10px;
+				line-height:28px;
+				margin-bottom:15px;
+				text-align:center;
+				width:141px;
+			}
+
+			.web-review {
+				display:inline-block;
+				margin-right:10px;
+				width:259px;
+
+				.box-image {
+					width:100%;
+
+					.image {
+						background-size:cover;
+						background-position:center;
+						color:#fff;
+						display:table-cell;
+						font-weight:bold;
+						height:259px;					
+						vertical-align:bottom;
+
+						.review-title {
+							background-image:url(../../images/bg-home-review.png);
+							padding:10px;
+						}
+					}
+				}
+			}
+
+			.cust-review {
+				display:inline-block;
+				vertical-align:top;
+				width:calc(~"100% - 259px - 4px - 10px");
+
+				.item {
+					margin-bottom:10px;
+
+					.image {
+						background-position:center;
+						background-size:cover;
+						display:inline-block;
+						height:100px;
+						margin-right:10px;
+						vertical-align:top;
+						width:100px;
+					}
+
+					.detail {
+						display:inline-block;
+						vertical-align:top;
+						width:calc(~"100% - 100px - 14px");
+
+						.review-title h3 {
+							color:#96000e;
+							font-weight:bold;
+							font-size:14px;
+							margin:0;
+						}
+
+						.review-desc {
+							font-size:13px;
+							margin-top:10px;
+						}
+					}
+				}
+				.item.last-child {margin-bottom:0;}
+			}
+		}
+
+		#forum {
+			margin-top:15px;
+
+			.title {
+				background:#96000e;
+				color:#fff;
+				font-size:10px;
+				line-height:28px;
+				margin-bottom:15px;
+				text-align:center;
+				width:141px;
+			}
+
+			.box-forum {
+				a {
+					color:#484848;
+					cursor:pointer;
+					font-size:12px;
+					font-weight:bold;
+					margin-right:27px;
+				}
+				a.selected {color:#96000e;}
+			}
+
+			.box-thread {
+				.item-forum {
+					margin-top:12px;
+
+					.forum-title {
+						border-bottom:solid 1px #a6a6a6;
+						
+						a {
+							color:#484848;
+							font-size:12px;
+							font-weight:bold;
+						}
+					}
+
+					.box-thread-item {
+						.item {
+							font-size:12px;
+							padding-top:12px;
+
+							.time {
+								color:#484848;
+								display:inline-block;
+								width:100px;					
+							}
+
+							.thread-title {
+								color:#96000e;
+								display:inline-block;
+								font-weight:bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

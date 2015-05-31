@@ -1,0 +1,52 @@
+@import "../var.less";
+
+#banner {
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:307px;
+	transition:all 1000ms ease;
+	width:100%;
+}
+
+#container-list {
+	margin:15px auto 0;
+	width:1170px;
+
+	#left::after {
+		content:"";
+		clear:both;
+		display:block;
+	}
+
+	#category-list {
+		.item-category {
+			float:left;
+			height:320px;
+			margin:0 40px 40px 0;
+			width:400px;
+
+			.parent-category-name {
+				direction:rtl;
+				margin:40px 40px 30px;
+
+				a {
+					color:#fff;
+					font-size:36px;
+				}
+			}
+
+			.child-category {
+				direction:rtl;
+				margin-right:40px;
+
+				div {
+					a {
+						color:#fff;
+						font-size:13px;
+					}
+				}
+			}
+		}
+	}
+}
